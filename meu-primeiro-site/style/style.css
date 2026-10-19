@@ -37,3 +37,22 @@ li {
     border-radius: 5px;
     font-weight: bold;
 }
+
+/* Está será a roupa do Modo Claro*/
+.modo-claro {
+    background-color: #ffffff; /* Fundo branco sólido */
+    color: #1a1a1a;           /* Texto cinza quase preto */
+}
+
+/* Quando o body tiver a classe .modo-claro, mude também os títulos dentro dele! */
+.modo-claro h1,
+.modo-claro h2,
+.modo-claro h3 {
+    color: #4a154b; /* Um roxo escuro super elegante para o fundo branco */
+}
+
+/* Quando o body tiver a classe .modo-claro, mude  os textos e listas! */
+.modo-claro p,
+.modo-claro ul {
+        color: #2b2b2b; /* Um cinza escuro confortável para a leitura */
+}
