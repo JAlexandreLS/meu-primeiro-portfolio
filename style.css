@@ -55,4 +55,29 @@ li {
 .modo-claro p,
 .modo-claro ul {
         color: #2b2b2b; /* Um cinza escuro confortável para a leitura */
+} 
+
+/* Configurações exclusivas para celulares e telas pequenas */
+@media (max-width: 600px) {
+
+    body {
+        /* Diminuímos o padding lateral para o texto não ficar espremido no centro */
+        padding: 20px 15px;
+        margin: 20px auto;
+        font-size: medium; /* Diminui um pouco a letra para caber mais conteúdo */
+
+    }
+
+    ul {
+        /* Mudamos a direção do flexbox! Em vez de lado a lado (row),
+        os botões vão se empilhar (column) como em um menu de aplicativo */
+        flex-direction: column;
+        gap: 10px; /* Diminui a distância entre os botôes */
+
+    }
+
+    li {
+        /* Faz cada "tecla" ocupar 100% da largura disponível na tela do celular */
+        text-align: center; /* Centraliza o texto dentro do botão */
+    }
 }
